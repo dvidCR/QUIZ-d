@@ -1,9 +1,9 @@
-nav button  {
+nav button {
    font-size: 20px; /* Tamaño de fuente */
    padding: 10px 80px; /* Relleno del botón */
 }
 
-nav{
+nav {
    display:grid;
    align-items: center;
    background-color: #FF6A6A;
@@ -13,7 +13,7 @@ nav{
    left: 0;
    width: 100%;
    z-index: 1000;
-   overflow: hidden; 
+   overflow: hidden;
 }
 
 
@@ -28,13 +28,13 @@ nav .barranav {
    /* Ajustado el tamaño de la fuente de los botones de la barra de navegación */
 }
 
-nav .barranav div:hover a {
+nav .barranav div:hover button {
    cursor: pointer;
    color: rgb(247, 147, 147);
    transition: color 1.5s;
 }
 
-nav .barranav a {
+nav .barranav button {
    font-size: 18px;
    text-decoration: none;
    color: rgb(255, 0, 0);
