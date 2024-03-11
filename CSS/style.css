@@ -133,3 +133,8 @@ body {
 .register{
    margin-top: 7%;
 }
+
+#images {
+   display: flex;
+   justify-content: space-between;
+}
