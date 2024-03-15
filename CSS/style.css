@@ -1,3 +1,30 @@
+body {
+   background-color: #000000;
+   margin: 0; /* Agregado para eliminar el margen predeterminado del body */
+   color: white;
+   text-shadow: 1px 0px 0px  #6d00c7,
+               0px 1px 0px  #6d00c7,
+               -1px 0px 0px  #6d00c7,
+               0px -1px 0px  #6d00c7;
+}
+
+/*INDEX*/
+.QUIZ {
+   text-align: center;
+   margin-top: 80px; /* Ajustado el margen superior del contenido */
+   font-size: 135px; /* Ajustado el tamaño de la fuente del título QUIZ */
+}
+
+.QUIZ a {
+   text-decoration: none;
+   color: white;
+   text-shadow: 10px 0px 0px red,
+               0px 1px 0px red,
+               -1px 0px 0px red,
+               0px -1px 0px red;
+}
+
+/*BARRA DE NAVEGACION*/
 nav button {
    font-size: 20px; /* Tamaño de fuente */
    padding: 10px 80px; /* Relleno del botón */
@@ -6,8 +33,7 @@ nav button {
 nav {
    display:grid;
    align-items: center;
-   background-color: #FF6A6A;
-   font-family: sans-serif;
+   background-color: #6d00c7;
    position: fixed;
    top: 0;
    left: 0;
@@ -16,22 +42,31 @@ nav {
    overflow: hidden;
 }
 
-
-nav .barranav {
-   display: grid;
-   grid-template-columns: repeat(5, auto);
-}
-
 .barranav {
    display: flex;
    flex-direction: wrap;
    /* Ajustado el tamaño de la fuente de los botones de la barra de navegación */
 }
 
+@keyframes colorRandom {
+   0% { color: rgba(255, 0, 0, 1); }
+   25% { color: rgba(0, 255, 0, 1); }
+   50% { color: rgba(0, 0, 255, 1); }
+   100% { color: rgba(255, 0, 0, 1); }
+   50% { color: rgba(0, 255, 0, 1); }
+   25% { color: rgba(0, 0, 255, 1); }
+   0% { color: rgba(255, 0, 0, 1); }
+}
+
 nav .barranav div:hover button {
    cursor: pointer;
-   color: rgb(247, 147, 147);
-   transition: color 1.5s;
+   animation: colorRandom 5s infinite;
+}
+
+nav .barranav div:active button {
+   cursor: pointer;
+   box-shadow: 0px 0px;
+   margin: 5px;  
 }
 
 nav .barranav button {
@@ -42,8 +77,14 @@ nav .barranav button {
                0px 1px 0px black,
                -1px 0px 0px black,
                0px -1px 0px black;
+   box-shadow: 1px 1px 0px hsl(118, 94%, 57%),
+               2px 2px 0px hsl(118, 94%, 57%),
+               3px 3px 0px hsl(118, 94%, 57%),
+               4px 4px 0px hsl(118, 94%, 57%),
+               5px 5px 0px hsl(118, 94%, 57%);
 }
 
+/*RANKING*/
 #podio{
    display: flex;
    justify-content: space-between;
@@ -110,26 +151,29 @@ nav .barranav button {
    background-color: rgb(255, 141, 255);
 }
 
-body {
-   background-color: #BEE4B1;
-   margin: 0; /* Agregado para eliminar el margen predeterminado del body */
-}
-
-.QUIZ {
-   text-align: center;
-   margin-top: 80px; /* Ajustado el margen superior del contenido */
-   font-size: 135px; /* Ajustado el tamaño de la fuente del título QUIZ */
-}
-
-.QUIZ a {
-   text-decoration: none;
-   color: black;
-}
-
+/*QUIZ*/
 #correct-answers{
    margin-top: 7%;
 }
 
+hr {
+   color: whitesmoke;
+}
+
+#questions p {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+#questions button {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+}
+
+/*LOGIN*/
 .register{
    margin-top: 7%;
 }
