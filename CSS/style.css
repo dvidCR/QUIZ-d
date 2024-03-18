@@ -72,16 +72,18 @@ nav .barranav div:active button {
 nav .barranav button {
    font-size: 18px;
    text-decoration: none;
+   border-bottom-right-radius: 50px;
    color: rgb(255, 0, 0);
+   background-color: rgb(223, 218, 218);
    text-shadow: 1px 0px 0px black,
                0px 1px 0px black,
                -1px 0px 0px black,
                0px -1px 0px black;
-   box-shadow: 1px 1px 0px hsl(118, 94%, 57%),
-               2px 2px 0px hsl(118, 94%, 57%),
-               3px 3px 0px hsl(118, 94%, 57%),
-               4px 4px 0px hsl(118, 94%, 57%),
-               5px 5px 0px hsl(118, 94%, 57%);
+   box-shadow: 1px 1px 0px rgb(223, 218, 218),
+               2px 2px 0px rgb(223, 218, 218),
+               3px 3px 0px rgb(223, 218, 218),
+               4px 4px 0px rgb(223, 218, 218),
+               5px 5px 0px rgb(223, 218, 218);
 }
 
 /*RANKING*/
@@ -160,16 +162,27 @@ hr {
    color: whitesmoke;
 }
 
-#questions p {
+#questions {
    display: flex;
    flex-direction: column;
    align-items: center;
 }
 
-#questions button {
+#questions div {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+#questions div p {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+#questions div button {
    display: flex;
    flex-direction: row;
-   justify-content: space-between;
    align-items: center;
 }
 
