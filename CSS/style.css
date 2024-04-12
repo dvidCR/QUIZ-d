@@ -1,4 +1,6 @@
 body {
+   width: 100%;
+   height: 100%;
    background-color: #000000;
    margin: 0; /* Agregado para eliminar el margen predeterminado del body */
    color: white;
@@ -194,4 +196,32 @@ hr {
 #images {
    display: flex;
    justify-content: space-between;
+}
+
+.formulario {
+   width: 100%;
+   display: flex;
+   justify-content: center ;
+}
+
+.formulario form {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   margin-top: 5%;
+   margin-bottom: 5%;
+   padding: 3%;
+   background-color: #6d00c7;
+   border-radius: 50%;
+}
+
+.formulario form input {
+   background-color: rgb(223, 218, 218);
+   margin-top: 15%;
+   padding: 3%;
+}
+
+.formulario form input[type="submit"] {
+   cursor: pointer;
+   animation: colorRandom 5s infinite;
 }

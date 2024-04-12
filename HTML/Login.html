@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
-
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>CRUD Firebase</title>
         <link rel="stylesheet" href="../CSS/style.css">  
         <link rel="shortcut icon" type="image/x-icon" href="../favicon-16x16.png">
@@ -22,34 +19,25 @@
         <br>
         <br>
         <br>
-        <div id="login">
-        <div class="card text-white bg-info mb-6  offset-md-4 register" style="max-width: 20rem;">
-            <div class="card-body">
-                <form id="task-form">
-                    <input type="text" id="task-title" class="form-control" placeholder="nombre de usuario" autofocus>
-                    <input type="password" id="task-description" class="form-control" placeholder="contraseña">
-                    <br>
-                    <input type="submit" value="registrarse" class="btn btn-lg btn-primary" id="task-button">
-                </form>
-            </div>
+        <div class="formulario">
+            <form id="task-form">
+                <input type="text" id="task-title" placeholder="nombre de usuario" autofocus>
+                <input type="password" id="task-description" placeholder="contraseña">
+                <br>
+                <input type="submit" value="registrarse" id="task-button">
+            </form>
         </div>
-        <br>
-        <br>
         <div id="images">
             <img src="../IMAGES/logo.png" alt="logo">
             <img src="../IMAGES/logo.png" alt="logo">
         </div>
-        <br>
-        <br>
-        <div class="card text-white bg-info mb-6  offset-md-4" style="max-width: 20rem;">
-            <div class="card-body">
-                <form id="task-form1">
-                    <input type="text" id="task-title1" class="form-control" placeholder="nombre de usuario"autofocus>
-                    <input type="password" id="task-description1" class="form-control" placeholder="contraseña">
-                    <br>
-                    <input type="submit" value="iniciar sesion" class="btn btn-lg btn-primary" id="task-button">
-                </form>
-            </div>
+        <div class="formulario">
+            <form id="task-form1">
+                <input type="text" id="task-title1" placeholder="nombre de usuario"autofocus>
+                <input type="password" id="task-description1"  placeholder="contraseña">
+                <br>
+                <input type="submit" value="iniciar sesion" id="task-button">
+            </form>
         </div>
         <script src = "../JS/scriptUsuario.js" type="module" defer></script>
     </body>
